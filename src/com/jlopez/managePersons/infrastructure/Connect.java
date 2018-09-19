@@ -1,11 +1,11 @@
-package com.jlopez.managePersons.data;
+package com.jlopez.managePersons.infrastructure;
 
 import java.sql.*;
 
 public class Connect {
 
-    private final static String JDBC_DRIVER = "com.mysql.jc.jdbc.Driver";
-    private final static String JDBC_URL = "jdbc:mysql://localhost/articles?useSSL=false";
+    private final static String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+    private final static String JDBC_URL = "jdbc:mysql://localhost:3306/articles?useSSL=false&serverTimezone=UTC";
     private final static String JDBC_USER = "root";
     private final static String JDBC_PASS = "rootroot";
     private static Driver driver = null;
